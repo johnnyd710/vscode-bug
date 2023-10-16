@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "Attach by Process ID windows",
+      "processId": "${command:PickProcess}",
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+      "windows": {
+        "outFiles": [
+          "/some/path/that/shouldnt/work",
+        ]
+      }
+    },
+    {
+      "name": "Attach by Process ID no windows",
+      "processId": "${command:PickProcess}",
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+      "outFiles": [
+        "/some/path/that/shouldnt/work",
+      ]
+    },
+  ]
+}
