@@ -12,7 +12,8 @@
         "outFiles": [
           "/some/path/that/shouldnt/work",
         ]
-      }
+      },
+      "trace": true,
     },
     {
       "name": "Attach by Process ID no windows",
@@ -24,7 +25,8 @@
       "type": "node",
       "outFiles": [
         "/some/path/that/shouldnt/work",
-      ]
+      ],
+      "trace": true,
     },
   ]
 }
